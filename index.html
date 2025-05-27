@@ -1,55 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Welcome | Your Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco Turrini | Engineering Research</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      box-sizing: border-box;
+    }
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #f7f9fc;
+      color: #1f1f1f;
+    }
+    header {
+      background: linear-gradient(to right, #3f87a6, #ebf8e1, #f69d3c);
+      color: #fff;
+      padding: 80px 20px;
       text-align: center;
     }
-    .intro-container {
-      max-width: 600px;
-      padding: 20px;
-    }
-    h1 {
+    header h1 {
       font-size: 3em;
       margin-bottom: 0.3em;
     }
-    p {
+    header p {
       font-size: 1.2em;
-      margin-bottom: 2em;
     }
-    .enter-button {
-      background-color: white;
-      color: #00c6ff;
-      border: none;
-      padding: 15px 30px;
-      font-size: 1em;
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+    section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
+      transition: color 0.3s;
     }
-    .enter-button:hover {
-      background-color: #e0f7ff;
+    nav a:hover {
+      color: #007acc;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <div class="intro-container">
-    <h1>Welcome to My Website</h1>
-    <p>Your one-stop destination for insightful content, creative projects, and more.</p>
-    <a href="main.html"><button class="enter-button">Enter</button></a>
-  </div>
+
+  <nav>
+    <a href="#introduction">Intro</a>
+    <a href="#wind-modeling">Wind Modeling</a>
+    <a href="#lidar">Lidar & Sensing</a>
+    <a href="#ml">Machine Learning</a>
+    <a href="#ecology">Ecology</a>
+    <a href="#energy-systems">Energy Systems</a>
+  </nav>
+
+  <header id="introduction">
+    <h1>Marco Turrini</h1>
+    <p>Engineer & Researcher | Wind Energy · Fluid Mechanics · Environmental Systems</p>
+  </header>
+
+  <section id="wind-modeling">
+    <h2>Atmospheric & Wake Flow Modeling</h2>
+    <p>
+      I work on improving our understanding of wind behavior in and around wind farms, especially focusing on wake dynamics, turbulence, and mesoscale coupling. This includes work with CFD, LES, and mesoscale models like WRF to reduce uncertainty in long-term wind predictions and turbine interactions.
+    </p>
+  </section>
+
+  <section id="lidar">
+    <h2>Lidar Measurements & Smart Scanning</h2>
+    <p>
+      I develop strategies for adaptive Lidar scanning and compare measured wind fields to virtual reconstructions using Gaussian Processes. These methods aim to capture critical phenomena such as gusts, low-level jets, and shear layers with higher resolution and relevance for wind farm operation and research.
+    </p>
+  </section>
+
+  <section id="ml">
+    <h2>Machine Learning for Wind Forecasting</h2>
+    <p>
+      I'm exploring data-driven models to enhance wind resource assessment, flow reconstruction, and uncertainty quantification. By integrating ML with physical models, I aim to build hybrid solutions that are both accurate and interpretable.
+    </p>
+  </section>
+
+  <section id="ecology">
+    <h2>Ecological Impact & Coexistence</h2>
+    <p>
+      I investigate the interaction between renewable energy systems and ecosystems, including bird deterrence strategies, wildlife monitoring, and policy-driven approaches for mitigation. This ties into a broader effort to design environmentally responsible wind projects.
+    </p>
+  </section>
+
+  <section id="energy-systems">
+    <h2>Hybrid Energy Systems & Optimization</h2>
+    <p>
+      My work also touches on energy management systems for hybrid plants combining wind, solar, and storage. I study operational optimization, market participation, and control strategies that enable more resilient and intelligent energy infrastructures.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Marco Turrini · All rights reserved.
+  </footer>
+
 </body>
 </html>
