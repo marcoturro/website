@@ -17,8 +17,8 @@
     
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      color: #2c3e50;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+      color: #e0e0e0;
       line-height: 1.7;
       overflow-x: hidden;
     }
@@ -28,12 +28,12 @@
       position: fixed;
       top: 0;
       width: 100%;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(10, 10, 10, 0.95);
       backdrop-filter: blur(10px);
       padding: 15px 0;
-      box-shadow: 0 2px 20px rgba(0, 123, 255, 0.1);
+      box-shadow: 0 2px 20px rgba(0, 191, 255, 0.1);
       z-index: 1000;
-      border-bottom: 1px solid rgba(0, 123, 255, 0.1);
+      border-bottom: 1px solid rgba(0, 191, 255, 0.1);
     }
     
     nav .nav-container {
@@ -48,7 +48,7 @@
     
     nav a {
       text-decoration: none;
-      color: #5a6c7d;
+      color: #b0b0b0;
       font-weight: 500;
       font-size: 0.95em;
       transition: all 0.3s ease;
@@ -63,12 +63,12 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, #007bff, #0056b3);
+      background: linear-gradient(90deg, #00bfff, #0080ff);
       transition: width 0.3s ease;
     }
     
     nav a:hover {
-      color: #007bff;
+      color: #00bfff;
     }
     
     nav a:hover::after {
@@ -79,7 +79,7 @@
     header {
       padding: 140px 20px 80px;
       text-align: center;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 245, 250, 0.9) 100%), url('images/light-ocean-waves.jpg');
+      background: linear-gradient(135deg, rgba(15, 15, 30, 0.85) 0%, rgba(26, 26, 46, 0.85) 100%), url('ocean-waves.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -94,28 +94,8 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at center, rgba(0, 123, 255, 0.05) 0%, transparent 70%);
+      background: radial-gradient(circle at center, rgba(0, 191, 255, 0.1) 0%, transparent 70%);
       animation: pulse 8s ease-in-out infinite;
-    }
-    
-    header::after {
-      content: '';
-      position: absolute;
-      top: -10%;
-      left: -5%;
-      width: 110%;
-      height: 120%;
-      background: url('images/wave-overlay.png');
-      background-size: cover;
-      background-position: center;
-      opacity: 0.6;
-      pointer-events: none;
-      animation: wave-drift 20s ease-in-out infinite;
-    }
-    
-    @keyframes wave-drift {
-      0%, 100% { transform: translateX(0) translateY(0); }
-      50% { transform: translateX(-20px) translateY(10px); }
     }
     
     @keyframes pulse {
@@ -132,7 +112,7 @@
       font-size: 3.5em;
       margin-bottom: 0.3em;
       font-weight: 700;
-      background: linear-gradient(135deg, #1a252f 0%, #007bff 100%);
+      background: linear-gradient(135deg, #ffffff 0%, #00bfff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -141,8 +121,8 @@
     header .subtitle {
       font-size: 1.3em;
       margin-bottom: 2em;
-      color: #5a6c7d;
-      font-weight: 400;
+      color: #b0b0b0;
+      font-weight: 300;
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
@@ -156,22 +136,21 @@
     }
     
     .links a {
-      color: #007bff;
+      color: #00bfff;
       text-decoration: none;
       transition: all 0.3s ease;
       padding: 10px 20px;
-      border: 1px solid rgba(0, 123, 255, 0.4);
+      border: 1px solid rgba(0, 191, 255, 0.3);
       border-radius: 25px;
       font-size: 0.95em;
       font-weight: 500;
-      background: rgba(255, 255, 255, 0.8);
     }
     
     .links a:hover {
-      background: rgba(0, 123, 255, 0.1);
-      border-color: #007bff;
+      background: rgba(0, 191, 255, 0.1);
+      border-color: #00bfff;
       transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 191, 255, 0.2);
     }
     
     /* Sections */
@@ -193,20 +172,19 @@
       top: 50%;
       width: 100%;
       height: 1px;
-      background: linear-gradient(90deg, transparent 0%, rgba(0, 123, 255, 0.2) 50%, transparent 100%);
+      background: linear-gradient(90deg, transparent 0%, rgba(0, 191, 255, 0.1) 50%, transparent 100%);
     }
     
     .section-content {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(26, 26, 46, 0.7);
       backdrop-filter: blur(10px);
       padding: 50px;
       border-radius: 20px;
-      border: 1px solid rgba(0, 123, 255, 0.15);
+      border: 1px solid rgba(0, 191, 255, 0.1);
       transition: all 0.4s ease;
       position: relative;
       z-index: 1;
       overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     }
     
     .section-content::before {
@@ -216,93 +194,24 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(255, 255, 255, 0.5);
+      background: rgba(10, 10, 20, 0.75);
       z-index: -1;
-    }
-    
-    /* Add decorative overlays to specific sections */
-    #projects .section-content::after {
-      content: '';
-      position: absolute;
-      top: -20%;
-      right: -10%;
-      width: 500px;
-      height: 500px;
-      background: url('images/vortex-overlay.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.3;
-      pointer-events: none;
-      z-index: 0;
-    }
-    
-    #skills .section-content::after {
-      content: '';
-      position: absolute;
-      bottom: -15%;
-      left: -10%;
-      width: 600px;
-      height: 400px;
-      background: url('images/streamlines-overlay.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.25;
-      pointer-events: none;
-      z-index: 0;
-    }
-    
-    #publications .section-content::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      right: -15%;
-      width: 400px;
-      height: 400px;
-      background: url('images/ripples-overlay.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
-      transform: translateY(-50%);
-    }
-    
-    #research .section-content::after {
-      content: '';
-      position: absolute;
-      top: -10%;
-      left: 50%;
-      width: 500px;
-      height: 400px;
-      background: url('images/turbulence-overlay.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
-      transform: translateX(-50%);
-    }
-    
-    /* Ensure content stays on top */
-    .section-content > * {
-      position: relative;
-      z-index: 1;
     }
     
     .section-content:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 40px rgba(0, 123, 255, 0.15);
-      border-color: rgba(0, 123, 255, 0.3);
+      box-shadow: 0 10px 40px rgba(0, 191, 255, 0.15);
+      border-color: rgba(0, 191, 255, 0.3);
     }
     
     .section-content:hover::before {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(10, 10, 20, 0.65);
     }
     
     section h2 {
       font-size: 2.2em;
       margin-bottom: 0.7em;
-      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+      background: linear-gradient(135deg, #00bfff 0%, #0080ff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -312,8 +221,8 @@
     section p {
       font-size: 1.1em;
       line-height: 1.8;
-      color: #4a5568;
-      font-weight: 400;
+      color: #c0c0c0;
+      font-weight: 300;
     }
     
     /* Projects Section */
@@ -325,54 +234,34 @@
     }
     
     .project-card {
-      background: rgba(255, 255, 255, 0.8);
-      border: 1px solid rgba(0, 123, 255, 0.2);
+      background: rgba(26, 26, 46, 0.6);
+      border: 1px solid rgba(0, 191, 255, 0.2);
       border-radius: 15px;
       padding: 30px;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .project-card::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      right: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(0, 123, 255, 0.03) 0%, transparent 70%);
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-    
-    .project-card:hover::before {
-      opacity: 1;
     }
     
     .project-card:hover {
       transform: translateY(-5px);
-      border-color: rgba(0, 123, 255, 0.5);
-      box-shadow: 0 8px 30px rgba(0, 123, 255, 0.15);
-      background: rgba(255, 255, 255, 0.95);
+      border-color: rgba(0, 191, 255, 0.5);
+      box-shadow: 0 8px 30px rgba(0, 191, 255, 0.2);
     }
     
     .project-card h3 {
-      color: #007bff;
+      color: #00bfff;
       font-size: 1.4em;
       margin-bottom: 0.5em;
     }
     
     .project-card .project-meta {
-      color: #718096;
+      color: #888;
       font-size: 0.9em;
       margin-bottom: 1em;
     }
     
     .project-card p {
       font-size: 1em;
-      color: #4a5568;
+      color: #b0b0b0;
       margin-bottom: 1em;
     }
     
@@ -384,12 +273,12 @@
     }
     
     .tag {
-      background: rgba(0, 123, 255, 0.1);
-      color: #007bff;
+      background: rgba(0, 191, 255, 0.1);
+      color: #00bfff;
       padding: 5px 12px;
       border-radius: 15px;
       font-size: 0.85em;
-      border: 1px solid rgba(0, 123, 255, 0.3);
+      border: 1px solid rgba(0, 191, 255, 0.3);
     }
     
     /* Publications Section */
@@ -398,36 +287,34 @@
     }
     
     .publication-item {
-      background: rgba(255, 255, 255, 0.7);
-      border-left: 3px solid #007bff;
+      background: rgba(26, 26, 46, 0.4);
+      border-left: 3px solid #00bfff;
       padding: 25px;
       margin-bottom: 20px;
       border-radius: 8px;
       transition: all 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     }
     
     .publication-item:hover {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(26, 26, 46, 0.6);
       transform: translateX(5px);
-      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1);
     }
     
     .publication-item h3 {
-      color: #007bff;
+      color: #00bfff;
       font-size: 1.2em;
       margin-bottom: 0.5em;
       font-weight: 500;
     }
     
     .publication-authors {
-      color: #5a6c7d;
+      color: #aaa;
       font-size: 0.95em;
       margin-bottom: 0.3em;
     }
     
     .publication-venue {
-      color: #718096;
+      color: #888;
       font-size: 0.9em;
       font-style: italic;
       margin-bottom: 0.5em;
@@ -440,7 +327,7 @@
     }
     
     .publication-links a {
-      color: #007bff;
+      color: #00bfff;
       text-decoration: none;
       font-size: 0.9em;
       transition: opacity 0.3s;
@@ -460,7 +347,7 @@
     }
     
     .skill-category h3 {
-      color: #007bff;
+      color: #00bfff;
       font-size: 1.5em;
       margin-bottom: 20px;
       font-weight: 500;
@@ -473,21 +360,19 @@
     }
     
     .skill-item {
-      background: rgba(0, 123, 255, 0.05);
-      border: 1px solid rgba(0, 123, 255, 0.2);
+      background: rgba(0, 191, 255, 0.05);
+      border: 1px solid rgba(0, 191, 255, 0.2);
       padding: 15px 20px;
       border-radius: 10px;
       text-align: center;
       transition: all 0.3s ease;
       font-weight: 500;
-      color: #2d3748;
     }
     
     .skill-item:hover {
-      background: rgba(0, 123, 255, 0.1);
-      border-color: #007bff;
+      background: rgba(0, 191, 255, 0.1);
+      border-color: #00bfff;
       transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0, 123, 255, 0.15);
     }
     
     /* CV Download Section */
@@ -498,7 +383,7 @@
     
     .download-btn {
       display: inline-block;
-      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+      background: linear-gradient(135deg, #00bfff 0%, #0080ff 100%);
       color: white;
       padding: 15px 40px;
       border-radius: 30px;
@@ -506,18 +391,18 @@
       font-weight: 600;
       font-size: 1.1em;
       transition: all 0.3s ease;
-      box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
+      box-shadow: 0 5px 20px rgba(0, 191, 255, 0.3);
     }
     
     .download-btn:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 30px rgba(0, 123, 255, 0.5);
+      box-shadow: 0 8px 30px rgba(0, 191, 255, 0.5);
     }
     
     /* Collapsible Research Areas */
     .research-toggle {
-      background: rgba(0, 123, 255, 0.1);
-      border: 1px solid rgba(0, 123, 255, 0.3);
+      background: rgba(0, 191, 255, 0.1);
+      border: 1px solid rgba(0, 191, 255, 0.3);
       padding: 15px 25px;
       border-radius: 10px;
       margin-top: 30px;
@@ -525,11 +410,11 @@
       text-align: center;
       transition: all 0.3s ease;
       font-weight: 500;
-      color: #007bff;
+      color: #00bfff;
     }
     
     .research-toggle:hover {
-      background: rgba(0, 123, 255, 0.15);
+      background: rgba(0, 191, 255, 0.15);
     }
     
     .research-areas {
@@ -539,14 +424,13 @@
     .research-area {
       margin-bottom: 30px;
       padding: 30px;
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(26, 26, 46, 0.3);
       border-radius: 10px;
-      border: 1px solid rgba(0, 123, 255, 0.15);
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 191, 255, 0.1);
     }
     
     .research-area h3 {
-      color: #007bff;
+      color: #00bfff;
       font-size: 1.5em;
       margin-bottom: 15px;
     }
@@ -556,9 +440,9 @@
       text-align: center;
       padding: 50px 20px;
       font-size: 0.9em;
-      color: #718096;
-      background: rgba(255, 255, 255, 0.8);
-      border-top: 1px solid rgba(0, 123, 255, 0.1);
+      color: #666;
+      background: rgba(10, 10, 10, 0.8);
+      border-top: 1px solid rgba(0, 191, 255, 0.1);
     }
     
     /* Responsive Design */
@@ -654,7 +538,7 @@
           <div class="project-card">
             <h3>Wake Modeling for Large Wind Farms</h3>
             <p class="project-meta">2022-2023 | Computational Study</p>
-            <p>Implemented Large Eddy Simulation (LES) models to predict wake interactions in offshore wind farms. Reduced computational time by 40% through hybrid CFD-ML approaches while maintaining accuracy.</p>
+            <p>Implemented flow models to predict wake interactions in offshore wind farms. Reduced computational time by 40% through hybrid CFD-ML approaches while maintaining accuracy.</p>
             <div class="project-tags">
               <span class="tag">LES</span>
               <span class="tag">CFD</span>
@@ -663,17 +547,6 @@
             </div>
           </div>
           
-          <div class="project-card">
-            <h3>Hybrid Energy System Optimization</h3>
-            <p class="project-meta">2023 | Industry Collaboration</p>
-            <p>Designed control strategies for wind-solar-storage hybrid plants to maximize revenue in dynamic energy markets. Developed optimization algorithms resulting in 18% increase in annual profitability.</p>
-            <div class="project-tags">
-              <span class="tag">Energy Management</span>
-              <span class="tag">Optimization</span>
-              <span class="tag">Python</span>
-              <span class="tag">Market Analysis</span>
-            </div>
-          </div>
           
           <div class="project-card">
             <h3>Bird Collision Risk Assessment Tool</h3>
@@ -698,12 +571,12 @@
         
         <div class="publication-list">
           <div class="publication-item">
-            <h3>Advancements in Wind Turbine Wake Modelling using 3D scanning LiDAR measurements</h3>
+            <h3>MAdvancements in Wind Turbine Wake Modelling using 3D scanning LiDAR measurements</h3>
             <p class="publication-authors"><strong>M. Turrini</strong>, Kisorthman Vimalakanthan, Edwin Bot</p>
             <p class="publication-venue">Journal of Physics: Conference Series, 2025 | Downloads: 88</p>
             <div class="publication-links">
               <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3016/1/012005/pdf" target="_blank">📄 PDF</a>
-              <a href="https://doi.org/10.1088/1742-6596/3016/1/012005" target="_blank">🔗 DOI</a>
+              <a href="10.1088/1742-6596/3016/1/012005" target="_blank">🔗 DOI</a>
               <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3016/1/012005" target="_blank">📊 IOP Science</a>
             </div>
           </div>
