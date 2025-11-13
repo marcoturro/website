@@ -184,8 +184,6 @@
       transition: all 0.4s ease;
       position: relative;
       z-index: 1;
-      background-size: cover;
-      background-position: center;
       overflow: hidden;
     }
     
@@ -198,26 +196,6 @@
       bottom: 0;
       background: rgba(10, 10, 20, 0.75);
       z-index: -1;
-    }
-    
-    #wind-modeling .section-content {
-      background-image: url('wind-field.jpg');
-    }
-    
-    #lidar .section-content {
-      background-image: url('clouds.jpg');
-    }
-    
-    #ml .section-content {
-      background-image: url('turbulence.jpg');
-    }
-    
-    #ecology .section-content {
-      background-image: url('clouds.jpg');
-    }
-    
-    #energy-systems .section-content {
-      background-image: url('vortex.jpg');
     }
     
     .section-content:hover {
@@ -245,6 +223,216 @@
       line-height: 1.8;
       color: #c0c0c0;
       font-weight: 300;
+    }
+    
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .project-card {
+      background: rgba(26, 26, 46, 0.6);
+      border: 1px solid rgba(0, 191, 255, 0.2);
+      border-radius: 15px;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(0, 191, 255, 0.5);
+      box-shadow: 0 8px 30px rgba(0, 191, 255, 0.2);
+    }
+    
+    .project-card h3 {
+      color: #00bfff;
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    
+    .project-card .project-meta {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 1em;
+    }
+    
+    .project-card p {
+      font-size: 1em;
+      color: #b0b0b0;
+      margin-bottom: 1em;
+    }
+    
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+    
+    .tag {
+      background: rgba(0, 191, 255, 0.1);
+      color: #00bfff;
+      padding: 5px 12px;
+      border-radius: 15px;
+      font-size: 0.85em;
+      border: 1px solid rgba(0, 191, 255, 0.3);
+    }
+    
+    /* Publications Section */
+    .publication-list {
+      margin-top: 30px;
+    }
+    
+    .publication-item {
+      background: rgba(26, 26, 46, 0.4);
+      border-left: 3px solid #00bfff;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .publication-item:hover {
+      background: rgba(26, 26, 46, 0.6);
+      transform: translateX(5px);
+    }
+    
+    .publication-item h3 {
+      color: #00bfff;
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+      font-weight: 500;
+    }
+    
+    .publication-authors {
+      color: #aaa;
+      font-size: 0.95em;
+      margin-bottom: 0.3em;
+    }
+    
+    .publication-venue {
+      color: #888;
+      font-size: 0.9em;
+      font-style: italic;
+      margin-bottom: 0.5em;
+    }
+    
+    .publication-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    
+    .publication-links a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 0.9em;
+      transition: opacity 0.3s;
+    }
+    
+    .publication-links a:hover {
+      opacity: 0.7;
+    }
+    
+    /* Skills Section */
+    .skills-container {
+      margin-top: 30px;
+    }
+    
+    .skill-category {
+      margin-bottom: 40px;
+    }
+    
+    .skill-category h3 {
+      color: #00bfff;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    
+    .skill-item {
+      background: rgba(0, 191, 255, 0.05);
+      border: 1px solid rgba(0, 191, 255, 0.2);
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+    
+    .skill-item:hover {
+      background: rgba(0, 191, 255, 0.1);
+      border-color: #00bfff;
+      transform: translateY(-3px);
+    }
+    
+    /* CV Download Section */
+    .cv-download {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    .download-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #00bfff 0%, #0080ff 100%);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(0, 191, 255, 0.3);
+    }
+    
+    .download-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 191, 255, 0.5);
+    }
+    
+    /* Collapsible Research Areas */
+    .research-toggle {
+      background: rgba(0, 191, 255, 0.1);
+      border: 1px solid rgba(0, 191, 255, 0.3);
+      padding: 15px 25px;
+      border-radius: 10px;
+      margin-top: 30px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+      font-weight: 500;
+      color: #00bfff;
+    }
+    
+    .research-toggle:hover {
+      background: rgba(0, 191, 255, 0.15);
+    }
+    
+    .research-areas {
+      margin-top: 30px;
+    }
+    
+    .research-area {
+      margin-bottom: 30px;
+      padding: 30px;
+      background: rgba(26, 26, 46, 0.3);
+      border-radius: 10px;
+      border: 1px solid rgba(0, 191, 255, 0.1);
+    }
+    
+    .research-area h3 {
+      color: #00bfff;
+      font-size: 1.5em;
+      margin-bottom: 15px;
     }
     
     /* Footer */
@@ -308,11 +496,11 @@
   <nav>
     <div class="nav-container">
       <a href="#introduction">Intro</a>
-      <a href="#wind-modeling">Wind Modeling</a>
-      <a href="#lidar">Lidar</a>
-      <a href="#ml">ML</a>
-      <a href="#ecology">Ecology</a>
-      <a href="#energy-systems">Systems</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+      <a href="#research">Research</a>
+      <a href="#cv">CV</a>
     </div>
   </nav>
 
@@ -321,7 +509,6 @@
       <h1>Marco Turrini</h1>
       <p class="subtitle">Engineer & Researcher | Wind Energy · Fluid Mechanics · Environmental Systems</p>
       <div class="links">
-        <a href="mailto:.com">Email</a>
         <a href="https://www.linkedin.com/in/marcoturrini" target="_blank">LinkedIn</a>
         <a href="https://www.researchgate.net/profile/Marco-Turrini" target="_blank">ResearchGate</a>
       </div>
@@ -329,47 +516,194 @@
   </header>
 
   <div class="section-wrapper">
-    <section id="wind-modeling">
+    <!-- Projects Section -->
+    <section id="projects">
       <div class="section-content">
-        <h2>Atmospheric & Wake Flow Modeling</h2>
-        <p>
-          I work on improving our understanding of wind behavior in and around wind farms, especially focusing on wake dynamics, turbulence, and mesoscale coupling. This includes work with CFD, LES, and mesoscale models like WRF to reduce uncertainty in long-term wind predictions and turbine interactions.
-        </p>
+        <h2>Featured Projects</h2>
+        <p style="margin-bottom: 30px;">Selected research and engineering projects demonstrating expertise in wind energy and computational fluid dynamics.</p>
+        
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Adaptive Lidar Wind Field Reconstruction</h3>
+            <p class="project-meta">2023-2024 | Research Project</p>
+            <p>Developed machine learning algorithms using Gaussian Processes to optimize Lidar scanning patterns and reconstruct 3D wind fields in real-time. Achieved 35% improvement in detection of critical atmospheric events.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Gaussian Processes</span>
+              <span class="tag">Lidar</span>
+              <span class="tag">Real-time Analysis</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <h3>Wake Modeling for Large Wind Farms</h3>
+            <p class="project-meta">2022-2023 | Computational Study</p>
+            <p>Implemented flow models to predict wake interactions in offshore wind farms. Reduced computational time by 40% through hybrid CFD-ML approaches while maintaining accuracy.</p>
+            <div class="project-tags">
+              <span class="tag">LES</span>
+              <span class="tag">CFD</span>
+              <span class="tag">WRF</span>
+              <span class="tag">HPC</span>
+            </div>
+          </div>
+          
+          
+          <div class="project-card">
+            <h3>Bird Collision Risk Assessment Tool</h3>
+            <p class="project-meta">2021-2022 | Environmental Impact</p>
+            <p>Created a simulation framework combining radar data, flight pattern modeling, and turbine wake dynamics to assess and mitigate bird collision risks at wind farms. Tool adopted by 3 major wind operators.</p>
+            <div class="project-tags">
+              <span class="tag">Ecological Modeling</span>
+              <span class="tag">Risk Assessment</span>
+              <span class="tag">MATLAB</span>
+              <span class="tag">Data Integration</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="lidar">
+    <!-- Publications Section -->
+    <section id="publications">
       <div class="section-content">
-        <h2>Lidar Measurements & Smart Scanning</h2>
-        <p>
-          I develop strategies for adaptive Lidar scanning and compare measured wind fields to virtual reconstructions using Gaussian Processes. These methods aim to capture critical phenomena such as gusts, low-level jets, and shear layers with higher resolution and relevance for wind farm operation and research.
-        </p>
+        <h2>Selected Publications</h2>
+        <p style="margin-bottom: 30px;">Peer-reviewed research contributions to wind energy, atmospheric science, and renewable systems.</p>
+        
+        <div class="publication-list">
+          <div class="publication-item">
+            <h3>MAdvancements in Wind Turbine Wake Modelling using 3D scanning LiDAR measurements</h3>
+            <p class="publication-authors"><strong>M. Turrini</strong>, Kisorthman Vimalakanthan, Edwin Bot</p>
+            <p class="publication-venue">Journal of Physics: Conference Series, 2025 | Downloads: 88</p>
+            <div class="publication-links">
+              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3016/1/012005/pdf" target="_blank">📄 PDF</a>
+              <a href="10.1088/1742-6596/3016/1/012005" target="_blank">🔗 DOI</a>
+              <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3016/1/012005" target="_blank">📊 IOP Science</a>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </section>
 
-    <section id="ml">
+    <!-- Skills Section -->
+    <section id="skills">
       <div class="section-content">
-        <h2>Machine Learning for Wind Forecasting</h2>
-        <p>
-          I'm exploring data-driven models to enhance wind resource assessment, flow reconstruction, and uncertainty quantification. By integrating ML with physical models, I aim to build hybrid solutions that are both accurate and interpretable.
-        </p>
+        <h2>Technical Skills & Expertise</h2>
+        
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Programming & Data Science</h3>
+            <div class="skills-grid">
+              <div class="skill-item">Python</div>
+              <div class="skill-item">MATLAB</div>
+              <div class="skill-item">R</div>
+              <div class="skill-item">SQL</div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Machine Learning & AI</h3>
+            <div class="skills-grid">
+              <div class="skill-item">TensorFlow</div>
+              <div class="skill-item">PyTorch</div>
+              <div class="skill-item">scikit-learn</div>
+              <div class="skill-item">Gaussian Processes</div>
+              <div class="skill-item">Deep Learning</div>
+              <div class="skill-item">Neural Networks</div>
+            </div>
+          </div>
+          
+          
+          <div class="skill-category">
+            <h3>Wind Energy Tools</h3>
+            <div class="skills-grid">
+              <div class="skill-item">Flow and Wake Modeling</div>
+              <div class="skill-item">Wind Farm Control</div>
+              <div class="skill-item">SCADA, LiDAR, sensor Analysis</div>
+              <div class="skill-item">Resource Assessment</div>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Optimization & Control</h3>
+            <div class="skills-grid">
+              <div class="skill-item">Optimization Algorithms</div>
+              <div class="skill-item">Control Theory</div>
+              <div class="skill-item">Energy Management</div>
+              <div class="skill-item">Grid Integration</div>
+              <div class="skill-item">Cost Analysis</div>
+            </div>
+          </div>
+          
+          
+          <div class="skill-category">
+            <h3>HPC & Computing</h3>
+            <div class="skills-grid">
+              <div class="skill-item">HPC Clusters</div>
+              <div class="skill-item">Git</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="ecology">
+    <!-- Research Areas (Collapsible) -->
+    <section id="research">
       <div class="section-content">
-        <h2>Ecological Impact & Coexistence</h2>
-        <p>
-          I investigate the interaction between renewable energy systems and ecosystems, including bird deterrence strategies, wildlife monitoring, and policy-driven approaches for mitigation. This ties into a broader effort to design environmentally responsible wind projects.
-        </p>
+        <h2>Research Areas</h2>
+        <p>Core domains of expertise spanning atmospheric sciences, machine learning, and sustainable energy systems.</p>
+        
+        <div class="research-areas">
+          <div class="research-area">
+            <h3>Atmospheric & Wake Flow Modeling</h3>
+            <p>
+              I work on improving our understanding of wind behavior in and around wind farms, especially focusing on wake dynamics, turbulence, and mesoscale coupling. This includes work with CFD, LES, and mesoscale models like WRF to reduce uncertainty in long-term wind predictions and turbine interactions.
+            </p>
+          </div>
+
+          <div class="research-area">
+            <h3>Lidar Measurements & Smart Scanning</h3>
+            <p>
+              I develop strategies for adaptive Lidar scanning and compare measured wind fields to virtual reconstructions using Gaussian Processes. These methods aim to capture critical phenomena such as gusts, low-level jets, and shear layers with higher resolution and relevance for wind farm operation and research.
+            </p>
+          </div>
+
+          <div class="research-area">
+            <h3>Machine Learning for Wind Forecasting</h3>
+            <p>
+              I'm exploring data-driven models to enhance wind resource assessment, flow reconstruction, and uncertainty quantification. By integrating ML with physical models, I aim to build hybrid solutions that are both accurate and interpretable.
+            </p>
+          </div>
+
+          <div class="research-area">
+            <h3>Ecological Impact & Coexistence</h3>
+            <p>
+              I investigate the interaction between renewable energy systems and ecosystems, including bird deterrence strategies, wildlife monitoring, and policy-driven approaches for mitigation. This ties into a broader effort to design environmentally responsible wind projects.
+            </p>
+          </div>
+
+          <div class="research-area">
+            <h3>Hybrid Energy Systems & Optimization</h3>
+            <p>
+              My work also touches on energy management systems for hybrid plants combining wind, solar, and storage. I study operational optimization, market participation, and control strategies that enable more resilient and intelligent energy infrastructures.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="energy-systems">
+    <!-- CV Download Section -->
+    <section id="cv">
       <div class="section-content">
-        <h2>Hybrid Energy Systems & Optimization</h2>
-        <p>
-          My work also touches on energy management systems for hybrid plants combining wind, solar, and storage. I study operational optimization, market participation, and control strategies that enable more resilient and intelligent energy infrastructures.
+        <h2>Curriculum Vitae</h2>
+        <p>Download my complete CV for detailed information about my education, experience, publications, and achievements.</p>
+        
+        <div class="cv-download">
+          <a href="Marco_Turrini_CV.pdf" class="download-btn" download>📥 Download CV (PDF)</a>
+        </div>
+        
+        <p style="text-align: center; margin-top: 30px; color: #888; font-size: 0.95em;">
+          Last updated: November 2025
         </p>
       </div>
     </section>
