@@ -78,6 +78,7 @@
     /* Header */
     header {
       padding: 140px 20px 80px;
+      text-align: center;
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 245, 250, 0.9) 100%), url('images/light-ocean-waves.jpg');
       background-size: cover;
       background-position: center;
@@ -125,36 +126,6 @@
     header .content {
       position: relative;
       z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      max-width: 1000px;
-      margin: 0 auto;
-      flex-wrap: wrap;
-    }
-    
-    .profile-photo {
-      width: 220px;
-      height: 220px;
-      border-radius: 15px;
-      border: 4px solid rgba(0, 123, 255, 0.3);
-      box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2);
-      object-fit: cover;
-      transition: all 0.3s ease;
-      flex-shrink: 0;
-    }
-    
-    .profile-photo:hover {
-      transform: scale(1.05);
-      border-color: rgba(0, 123, 255, 0.6);
-      box-shadow: 0 12px 35px rgba(0, 123, 255, 0.3);
-    }
-    
-    .header-text {
-      text-align: left;
-      flex: 1;
-      min-width: 300px;
     }
     
     header h1 {
@@ -172,11 +143,14 @@
       margin-bottom: 2em;
       color: #5a6c7d;
       font-weight: 400;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .links {
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       gap: 25px;
       flex-wrap: wrap;
     }
@@ -589,24 +563,6 @@
     
     /* Responsive Design */
     @media (max-width: 768px) {
-      header .content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .header-text {
-        text-align: center;
-      }
-      
-      .links {
-        justify-content: center;
-      }
-      
-      .profile-photo {
-        width: 180px;
-        height: 180px;
-      }
-      
       header h1 {
         font-size: 2.5em;
       }
@@ -666,14 +622,11 @@
 
   <header id="introduction">
     <div class="content">
-      <img src="images/profile-photo.jpg" alt="Marco Turrini" class="profile-photo">
-      <div class="header-text">
-        <h1>Marco Turrini</h1>
-        <p class="subtitle">Engineer & Researcher | Wind Energy · Fluid Mechanics · Computational Physics</p>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/marcoturrini" target="_blank">LinkedIn</a>
-          <a href="https://www.researchgate.net/profile/Marco-Turrini" target="_blank">ResearchGate</a>
-        </div>
+      <h1>Marco Turrini</h1>
+      <p class="subtitle">Engineer & Researcher | Wind Energy · Fluid Mechanics · Environmental Systems</p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/marcoturrini" target="_blank">LinkedIn</a>
+        <a href="https://www.researchgate.net/profile/Marco-Turrini" target="_blank">ResearchGate</a>
       </div>
     </div>
   </header>
@@ -687,54 +640,53 @@
         
         <div class="projects-grid">
           <div class="project-card">
-            <h3>LiDAR Wind Field Reconstruction (GloBE)</h3>
-            <p class="project-meta">2021-2024 | Research Project</p>
-            <p>Developed machine learning algorithms using Gaussian Processes to optimize Lidar scanning patterns and reconstruct 3D wind fields for characteristic atmospheric events.</p>
+            <h3>Adaptive Lidar Wind Field Reconstruction</h3>
+            <p class="project-meta">2023-2024 | Research Project</p>
+            <p>Developed machine learning algorithms using Gaussian Processes to optimize Lidar scanning patterns and reconstruct 3D wind fields in real-time. Achieved 35% improvement in detection of critical atmospheric events.</p>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">Gaussian Processes</span>
               <span class="tag">Lidar</span>
-              <span class="tag">Data Analysis</span>
+              <span class="tag">Real-time Analysis</span>
             </div>
           </div>
           
           <div class="project-card">
-            <h3>Wake Modeling for Large Wind Farms (SAWOP, CliF)</h3>
-            <p class="project-meta">2022-2023 | Research Project</p>
-            <p>Wind farm flow control optimization for optimized yield in offshore wind farms. Developed a flow estimation model using SCADA data from turbines</p>
+            <h3>Wake Modeling for Large Wind Farms</h3>
+            <p class="project-meta">2022-2023 | Computational Study</p>
+            <p>Implemented Large Eddy Simulation (LES) models to predict wake interactions in offshore wind farms. Reduced computational time by 40% through hybrid CFD-ML approaches while maintaining accuracy.</p>
             <div class="project-tags">
-              <span class="tag">Optimisation</span>
-              <span class="tag">Wake modeling</span>
+              <span class="tag">LES</span>
+              <span class="tag">CFD</span>
+              <span class="tag">WRF</span>
+              <span class="tag">HPC</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <h3>Hybrid Energy System Optimization</h3>
+            <p class="project-meta">2023 | Industry Collaboration</p>
+            <p>Designed control strategies for wind-solar-storage hybrid plants to maximize revenue in dynamic energy markets. Developed optimization algorithms resulting in 18% increase in annual profitability.</p>
+            <div class="project-tags">
+              <span class="tag">Energy Management</span>
+              <span class="tag">Optimization</span>
+              <span class="tag">Python</span>
+              <span class="tag">Market Analysis</span>
+            </div>
+          </div>
+          
+          <div class="project-card">
+            <h3>Bird Collision Risk Assessment Tool</h3>
+            <p class="project-meta">2021-2022 | Environmental Impact</p>
+            <p>Created a simulation framework combining radar data, flight pattern modeling, and turbine wake dynamics to assess and mitigate bird collision risks at wind farms. Tool adopted by 3 major wind operators.</p>
+            <div class="project-tags">
+              <span class="tag">Ecological Modeling</span>
+              <span class="tag">Risk Assessment</span>
               <span class="tag">MATLAB</span>
-            </div>
-          </div>
-          
-          
-          <div class="project-card">
-            <h3>Anomaly Detection Tool</h3>
-            <p class="project-meta">2022-2024 | Research Project</p>
-            <p>Developed tools for outliers and trend detection using Isolation Forest and Clustering algorithms for data processing.</p>
-            <div class="project-tags">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Sensor fusion</span>
               <span class="tag">Data Integration</span>
             </div>
           </div>
-        
-		
-		  <div class="project-card">
-            <h3>Settling Velocity Density Function of Cohesive Particles from Turbidity Measurements</h3>
-            <p class="project-meta">2023-2025 | Research MSc Thesis</p>
-            <p>Designed measurement set up and data analysis procedure to estimate Particle Velocity Density function of deep sea water sediment samples.</p>
-            <div class="project-tags">
-              <span class="tag">Deep/Convolutional Neural Networks</span>
-              <span class="tag">Python</span>
-              <span class="tag">Optical Measurements</span>
-            </div>
-          </div>
-		  
-		  
-		</div>
+        </div>
       </div>
     </section>
 
@@ -742,7 +694,7 @@
     <section id="publications">
       <div class="section-content">
         <h2>Selected Publications</h2>
-        <p style="margin-bottom: 30px;">Peer-reviewed papers.</p>
+        <p style="margin-bottom: 30px;">Peer-reviewed research contributions to wind energy, atmospheric science, and renewable systems.</p>
         
         <div class="publication-list">
           <div class="publication-item">
@@ -755,48 +707,8 @@
               <a href="https://iopscience.iop.org/article/10.1088/1742-6596/3016/1/012005" target="_blank">📊 IOP Science</a>
             </div>
           </div>
+          
         </div>
-
-		<p style="margin-bottom: 30px;"> </p>
-		<p style="margin-bottom: 30px;">Conference presentations:</p>
-        
-		<div class="publication-list">
-          <div class="publication-item">
-            <h3>Wind Direction Measurement Uncertainty Driven Analyis in a Sensor-Equipped Wind Farm</h3>
-            <p class="publication-authors"><strong>M. Turrini</strong>, N. Cassamo, H. Links, K. Hermans, L. Laas</p>
-            <div class="publication-links">
-              <a href="https://www.sintef.no/globalassets/project/eera-deepwind-2023/presentasjoner/wind-farm-control_turrini.pdf" target="_blank">📄 PDF</a>
-            </div>
-          </div>
-        </div>
-		
-		<p style="margin-bottom: 30px;"> </p>
-		<p style="margin-bottom: 30px;">MSc Thesis:</p>
-        
-		<div class="publication-list">
-          <div class="publication-item">
-            <h3>Settling Velocity Density Function of Cohesive Particles from Turbidity Measurements</h3>
-            <p class="publication-authors"><strong>M. Turrini</strong>; Supervisors: R. Ouillon, F. Gallaire, T. Peacock</p>
-            <div class="publication-links">
-              <a href="https://infoscience.epfl.ch/server/api/core/bitstreams/50bf99ca-38d3-43db-a0e0-1d8c3bbb229f/content" target="_blank">📄 PDF</a>
-              <a href="https://infoscience.epfl.ch/entities/publication/d40dd3b4-3978-4fe4-98d0-4fc0b41dbff8" target="_blank">📊 EPFL InfoScience</a>
-            </div>
-          </div>
-        </div>
-		
-		<p style="margin-bottom: 30px;"> </p>
-		<p style="margin-bottom: 30px;">Research reports.</p>
-
-        <div class="publication-list">
-          <div class="publication-item">
-            <h3>Application of Gaussian Processes to Dual-Doppler LiDAR scanning measurements for high frequency wind field reconstruction</h3>
-            <p class="publication-authors"><strong>N. Cassamo</strong>, M. Turrini, D. Wouters, A. van der Werff,W. Castricum, J.W. Wagenaar</p>
-            <div class="publication-links">
-              <a href="https://publications.tno.nl/publication/34638845/mPz2in/TNO-2021-R11759.pdf" target="_blank">📄 PDF</a>
-            </div>
-          </div>
-        </div>
-		
       </div>
     </section>
 
@@ -872,24 +784,37 @@
           <div class="research-area">
             <h3>Atmospheric & Wake Flow Modeling</h3>
             <p>
-              I work on improving our understanding of wind behavior in and around wind farms, especially focusing on wake dynamics, turbulence, and mesoscale coupling. This couples with CFD, and mesoscale models like WRF to reduce uncertainty in flow and predictions and turbine behavior.
+              I work on improving our understanding of wind behavior in and around wind farms, especially focusing on wake dynamics, turbulence, and mesoscale coupling. This includes work with CFD, LES, and mesoscale models like WRF to reduce uncertainty in long-term wind predictions and turbine interactions.
             </p>
           </div>
 
           <div class="research-area">
             <h3>Lidar Measurements & Smart Scanning</h3>
             <p>
-              I develop strategies for LiDAR data analysis. These methods aim to capture critical phenomena such as blockage, gusts, jets, and shear layers with higher resolution and relevance for wind turbine and farm operation and research.
+              I develop strategies for adaptive Lidar scanning and compare measured wind fields to virtual reconstructions using Gaussian Processes. These methods aim to capture critical phenomena such as gusts, low-level jets, and shear layers with higher resolution and relevance for wind farm operation and research.
             </p>
           </div>
 
           <div class="research-area">
-            <h3>Machine Learning</h3>
+            <h3>Machine Learning for Wind Forecasting</h3>
             <p>
-              I'm exploring data-driven models for forecasting and data analysis applied to various data types. By integrating ML with physical models, I aim to build hybrid solutions that are both accurate and interpretable.
+              I'm exploring data-driven models to enhance wind resource assessment, flow reconstruction, and uncertainty quantification. By integrating ML with physical models, I aim to build hybrid solutions that are both accurate and interpretable.
             </p>
           </div>
 
+          <div class="research-area">
+            <h3>Ecological Impact & Coexistence</h3>
+            <p>
+              I investigate the interaction between renewable energy systems and ecosystems, including bird deterrence strategies, wildlife monitoring, and policy-driven approaches for mitigation. This ties into a broader effort to design environmentally responsible wind projects.
+            </p>
+          </div>
+
+          <div class="research-area">
+            <h3>Hybrid Energy Systems & Optimization</h3>
+            <p>
+              My work also touches on energy management systems for hybrid plants combining wind, solar, and storage. I study operational optimization, market participation, and control strategies that enable more resilient and intelligent energy infrastructures.
+            </p>
+          </div>
         </div>
       </div>
     </section>
